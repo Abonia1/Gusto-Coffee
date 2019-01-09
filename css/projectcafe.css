@@ -1,0 +1,106 @@
+.line
+{
+font-family:Vladimir Script; 
+font-size:45px;
+font-weight:bold;
+}
+.snap
+{
+margin-top:30px;
+margin-left:180px;
+margin-bottom:20px;
+}
+.logo img
+{
+	margin-top:-28px;
+}
+.a
+{
+margin-left:170px;
+margin-top:30px;
+font-family:Vladimir Script; 
+width:80%;
+height:250px;
+}
+.a1
+{
+float:left;
+height:200px;
+width:50%;
+margin-top:50px;
+opacity:;
+
+}
+.a2
+{
+	height:200px;
+	width:50%;
+	float:right;
+	margin-top:50px;	
+}
+
+.img1
+{
+float:left;
+}
+
+.offer
+{
+margin-left:165px;
+font-family:Vladimir Script;
+
+height:400px;
+width:1000px;
+margin-top:40px;
+
+}
+.offer1
+{
+margin-left:2px;
+height:400px;
+width:329px;
+}
+.offer1
+{
+margin-left:2px;
+height:400px;
+width:329px;
+float:left;
+background:#D1C6B2;
+}
+.offer2
+{
+height:90px;
+border:5PX solid #E3D7C3;
+margin-top:10px;
+margin-left:10px;
+margin-right:10px;
+margin-bottom:10px;
+background:#D1C6B2;
+color:#E3D7C3;
+}
+.offer3
+{
+height:275px;
+border:5PX #D1C6B2;
+margin-top:10px;
+margin-left:10px;
+margin-right:10px;
+margin-bottom:10px;
+background:#D1C6B2;
+
+}
+.offer3:hover
+{
+	border:7px solid #D1C6B2;
+}
+
+.bottom
+{
+height:70px;
+background-color:#D1C6B2;
+
+width:1354px;
+margin-top:28px;
+margin-left:-10px;
+font-weight:bold;
