@@ -76,7 +76,7 @@
 
 
 
-			    <div class="snap"><img src="IMAGES/photo.gif"  height="350px" width="1000px" border="3px" style="margin-top:20px;">
+			    <div class="snap"><img src="IMAGES/photo.png"  height="350px" width="1000px" border="3px" style="margin-top:20px;">
 				</div>
 				<div class="line" >
 					<center>The right place to have good rest !</center>

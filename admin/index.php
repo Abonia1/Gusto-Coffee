@@ -21,7 +21,7 @@ if(isset($_POST['s']))
 {
 $x=$_POST['username'];
 $y=$_POST['password'];
-$con=mysqli_connect("localhost","root","","gustocoffee");
+$con=mysqli_connect("localhost","root","aboabo","gustocoffee");
 //mysqli_select_db("gustocoffee");
 $a=mysqli_query($con,"select * from user where user='$x' and pwd='$y'" );
 $b=mysqli_num_rows($a);
