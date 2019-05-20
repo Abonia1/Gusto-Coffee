@@ -107,7 +107,7 @@ INSERT INTO `contact` (`cid`, `name`, `mail`, `phn`, `msg`) VALUES
 (1, 'abo', '01723214', '14343', '0'),
 (2, 'david', '01723214', '14343', '0'),
 (3, 'benjamin', '01723214', '14343', '0'),
-(4, 'anthony', '01723214', '14343', '0');
+(4, 'root', '01723214', '14343', '0');
 
 
 -- --------------------------------------------------------
@@ -179,7 +179,7 @@ INSERT INTO `user` (`id`, `name`, `user`, `pwd`) VALUES
 (1, 'abonia', 'a@gmail.com', 'adc'),
 (2, 'david', 'david@gmail.com', 'adc'),
 (3, 'ben', 'ben@gmail.com', 'adc'),
-(4, 'anthony', 'anthony@gmail.com', 'adc'),
+(4, 'root', 'root@gmail.com', 'adc'),
 (5, 'agi', 'agi@gmail.com', 'adc'),
 (6, 'girl', 'girl@gmail.com', 'adc'),
 (7, 'man', 'man@gmail.com', '555'),

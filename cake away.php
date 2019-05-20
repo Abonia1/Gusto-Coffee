@@ -29,7 +29,7 @@
 	
 	
 					<?php
-	$con=mysqli_connect("localhost","root","aboabo","gustocoffee");
+	$con=mysqli_connect("localhost","root","","gustocoffee");
 //mysqli_select_db("gustocoffee");
 $x=mysqli_query($con,"select * from food where menu_type='4'");
 while($y=mysqli_fetch_array($x))
