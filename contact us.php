@@ -51,9 +51,9 @@
 		  
 		 
 		 
-		      <div class="bottom">
-					<center><p style="padding:30px;">Guesto-Coffee2019 </p></center>
-					</div>
+		      <?php
+				        include ('footer.php');
+				    ?>
 		  
 		        </div>
 		   

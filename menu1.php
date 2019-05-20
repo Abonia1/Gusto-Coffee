@@ -17,7 +17,7 @@
 				?>
 				
 <div class="maindiv">
-	<div class="leftdiv">
+	<div class="leftdivv">
 				
 				<center><a style="text-decoration:none;color:#000000;" href="small eats.php"><p  class="leftdiv1">Small eats</p></a></center>
 				<center><a style="text-decoration:none;color:#000000;" href="big eats.php"><p  class="leftdiv1">Big eats/Sandwiches</p></a></center>
@@ -25,7 +25,7 @@
 				<center><a  style="text-decoration:none;color:#000000;"href="cake away.php" ><p  class="leftdiv1">Cake away</p></a></center>
 				<center><a  style="text-decoration:none;color:#000000;"href="dessert.php"><p  class="leftdiv1">Dessert shots</p></a></center>				
     </div>
-	<div class="rightdiv">
+	<div class="rightdivv">
 				<div class="rightdiv1">
 					<div class="rightdiv1a"><img src="IMAGES/c14.PNG" style="height:279px; width:279px; "></div>
 					<div class="rightdiv1b"><center><p>EGG WRAP(&nbsp;<img src="IMAGES/download.png" style="height:11px; width:13px;">50)</p></center></div>
@@ -152,7 +152,9 @@
 				
 	</div>
 </div>
-				
+	<?php
+				        include ('footer.php');
+				    ?>			
 							
 </body>
 </html>			

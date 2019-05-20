@@ -1,6 +1,7 @@
 <html>
 				<head>
 								<title></title>
+								<link rel="stylesheet" type="text/css" href="css/style.css"/>
 								<link rel="stylesheet" type="text/css" href="css/menu.css"/>
 								<link rel="stylesheet" type="text/css" href="css/menu1.css"/>
 								<link rel="stylesheet" type="text/css" href="css/beverages.css"/>
@@ -30,7 +31,7 @@
 				
 				
 		</ul> 
-		<a href="index.php" ><img src="IMAGES/gusto_coffee.PNG" id="a"></a>
+            <div class="logo"><a href="index.php" ><img src="IMAGES/gusto_coffee.PNG" id="a"></a></div>
 	   	<ul class="second">
 				<a style="text-decoration:none;color:#000000;" href="SPECIALS.php"><li class="li">Specials</li></a>
 				<a style="text-decoration:none;color:#000000;" href="admin/index.php"><li class="li">Admin</li></a>

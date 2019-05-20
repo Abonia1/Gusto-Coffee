@@ -21,7 +21,7 @@
 
 				</head>
 				
-			   <body>
+			   <body class="accueil">
 				<?php
 				include ('menu.php');
 				?>
@@ -76,7 +76,7 @@
 
 
 
-			    <div class="snap"><img src="IMAGES/photo.png"  height="350px" width="1000px" border="3px" style="margin-top:20px;">
+			    <div class="snap"><center><img src="IMAGES/photo.png"  height="350px" width="1000px" border="3px" style="margin-top:20px;"></center>
 				</div>
 				<div class="line" >
 					<center>The right place to have good rest !</center>
@@ -148,13 +148,9 @@
 					<div class="offer3"><img src="IMAGES/c27.PNG" height="276" width="300"></div>
 					</div>
 					</div>-->	
-					<div class="bottom">
-					
-					<footer style="padding:30px">
-       				 <p class="pull-right"><a href="#">Back to top</a></p>
-        			<p>&copy; 2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      				</footer>
-					</div>
+					<?php
+				        include ('footer.php');
+				    ?>
 					
 					</div>
 					

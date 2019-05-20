@@ -26,7 +26,7 @@
     </div>
 	<div class="rightdiv">
 	<?php
-	$con=mysqli_connect("localhost","root","aboabo","gustocoffee");
+	$con=mysqli_connect("localhost","anthony","123","gustocoffee");
 //mysqlii_select_db("gustocoffee");
 $x=mysqli_query($con,"select * from food where menu_type='1'");
 while($y=mysqli_fetch_array($x))
