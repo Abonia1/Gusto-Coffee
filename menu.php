@@ -34,6 +34,7 @@
             <div class="logo"><a href="index.php" ><img src="IMAGES/gusto_coffee.PNG" id="a"></a></div>
 	   	<ul class="second">
 				<a style="text-decoration:none;color:#000000;" href="SPECIALS.php"><li class="li">Specials</li></a>
+				<a style="text-decoration:none;color:#000000;" href="reservation.php"><li class="li">Reservation</li></a>
 				<a style="text-decoration:none;color:#000000;" href="admin/index.php"><li class="li">Admin</li></a>
 				<a style="text-decoration:none;color:#000000; " href="contact us.php" ><li  class="li" style="margin-left:-15px;">Contacts</li></a>
 
