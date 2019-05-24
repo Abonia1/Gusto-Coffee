@@ -14,22 +14,27 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/timepicker.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.8.1/jquery.timepicker.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.8.1/jquery.timepicker.min.js"></script>
 
     <!-- <link rel="stylesheet" type="text/css" href="jquery.datetimepicker.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="jquery.datetimepicker.js"></script> -->
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+
 
 
     <script>
         $(function() {
             $("#datepicker").datepicker();
         });
-
-        $(document).ready(function(){
-    $('input.timepicker').timepicker({});
-});
+        $(document).ready(function() {
+            $('.txt').timepicker();
+        });
     </script>
 
     <!-- <script>
@@ -38,9 +43,9 @@ $('#demo').datetimepicker({
 
 inline:true,
 
-}); -->
+});
 
-    </script>
+    </script>-->
 
 
 
@@ -54,7 +59,7 @@ inline:true,
 
 
 
-    <div class="container" style="height:50%">
+    <div class="container" style="height:100%">
         <form action="thankyou.php" method="post">
 
             <div class="col-md-6" style="width:50%;">
@@ -63,7 +68,10 @@ inline:true,
             </div>
             <div class="col-md-6" style="width:50%;float:right">
                 <label>Time</label>
-                <input type="text" id="timepicker" required="true">
+                <input class="txt">
+                <svg width="50%" height="80%">
+                    <rect x="50" y="20" rx="20" ry="20" width="50%" height="80%" style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+                </svg>
             </div>
 
 
