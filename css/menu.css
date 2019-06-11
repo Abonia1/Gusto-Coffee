@@ -24,8 +24,14 @@ margin-top:-10px;
 {
 	list-style:none;
 }
-.one .li,.second .li
-{
+.one .li {
+	float:left;
+	padding:18px 8px;
+	font-family:; 
+	font-size:25px;
+	margin-left::-10px;
+}
+.second .li {
 	float:left;
 	padding:18px;
 	font-family:; 

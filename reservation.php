@@ -79,7 +79,7 @@
 //to call show() function to display the plan image
 function show() {
   //document.getElementById('planImg').style.maxHeight = "200px";
-  document.getElementById('planImg').src="IMAGES/plan2.png";
+  document.getElementById('planImg').src="IMAGES/plan2.PNG";
   
 }
 
@@ -127,9 +127,8 @@ inline:true,
                     <td style="padding-top:20px;">
                         <label>People</label>
                         <input type='button' value='-' class='qtyminus' field='quantity' />
-    <input type='text' name='quantity' value='0' class='qty' />
-    <input type='button' value='+' class='qtyplus' field='quantity' />
-                        
+                        <input type='text' name='quantity' value='0' class='qty' />
+                        <input type='button' value='+' class='qtyplus' field='quantity' />
                     </td>
                     <td></td>
                     <td>
@@ -139,7 +138,7 @@ inline:true,
                 </tr>
             </table>
            
-            <img id="planImg"">
+            <img id="planImg">
 
         </div>
         

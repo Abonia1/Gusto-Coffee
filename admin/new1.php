@@ -5,7 +5,7 @@ $b=$_POST['b'];
 
 $c=$_POST['c'];
 
-$con=mysqli_connect("localhost","root","","gustocoffee");
+$con=mysqli_connect("localhost","root","aboabo","gustocoffee");
 //mysqli_select_db("gustocoffee");
 mysqli_query($con,"INSERT INTO  `gustocoffee`.`user` (`id` ,`name` ,`user` ,`pwd`)VALUES (NULL ,  '$a',  '$b',  '$c');");
 header("location:index.php");

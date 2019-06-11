@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-$con=mysqli_connect("localhost","root","","gustocoffee");
+$con=mysqli_connect("localhost","root","aboabo","gustocoffee");
 //mysqli_select_db("gustocoffee");
 $a=$_GET['preeti']; 
 $x=mysqli_query($con,"SELECT * FROM `beverages` WHERE `b_id`='$a'");
