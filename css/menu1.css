@@ -8,13 +8,10 @@ margin-left:5px;
 }
 .leftdiv
 {
-position:absolute;
 height:570px;
 width:300px;
 background-color:none;
 border:none;
-margin-left:20px;
-margin-top:10px;
 float:left;
 }
 .leftdiv1
@@ -26,15 +23,15 @@ margin-top:20px;
 background-color:#E4D8C3;
 padding:10px;
 border-radius:10px;
-margin-left:0px;
+margin-left:5%;
 margin-top:30px;
-font-family:Vladimir Script; 
 font-size:29px;
+text-align: center;
 }
 
 .rightdiv
 {
-width:960px;
+width:70%;
 height:900px;
 border:none;
 background-color: none;
@@ -113,4 +110,16 @@ margin-bottom:10px;
 background:#D1C6B2;
 
 }
-
+@media screen and (max-width:1080px) {
+    .leftdiv {
+        display: inline-block;
+        height: 200px;
+        width: 100%;
+    }
+    .leftdiv1 {
+        width: 35%;
+        margin-left: 5%;
+        float: left;
+        margin-right: 5%;
+    }
+}

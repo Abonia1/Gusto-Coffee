@@ -2,6 +2,9 @@ body
 {
 background-image:url(../IMAGES/c1.PNG);
 }
+div, p, a, li, td {
+font-family: 'Roboto', sans-serif;
+}
 .page
 {
 width:1354px;
@@ -74,4 +77,62 @@ ul li:hover ol
 {
 	display:block;
 }
-
+.menumobile {
+    background-color:#3bb44a;
+    height: 105px;
+}
+.hamb {
+    display: none;
+}
+@media screen and (max-width: 1080px) {
+    .menumobile {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    #a {
+        height: 100px !important;
+        width: 100px !important;
+        margin-top: 12px !important;
+    }
+    .logo, .hamburger {
+        width:50%;
+    }
+    .logo p {
+        margin-top: 40px;
+        margin-left: 20px;
+        font-size: 24px;
+    }
+    .hamburger button {
+        background-color: #3bb44a;
+        border: 1px solid white;
+        padding: 15px 30px;
+        float:right;
+        margin-right: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .hamb {
+        width: 100%;
+        background-color: #3bb44a;
+        border-top: 1px solid white;
+    }
+    .hamb ul {
+        text-align: right;
+        list-style-type: none;
+    }
+    .hamb ul li {
+        padding: 10px 0px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1081px) {
+    .menumobile {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}

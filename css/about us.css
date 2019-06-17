@@ -1,10 +1,10 @@
 
 .about1
 {
-width:1280px;
+width:100%;
 border:9px solid  #D1C6B2;
 background-color:#E3D8C2;
-margin-top:30px;
+margin-top:100px;
 margin-left:15px;
 margin-right:50px;
 }
@@ -17,8 +17,10 @@ margin-top:10px;
 {
 width:760px;
 margin-top:10px;
-font-family:Vladimir Script;
 }
-
-
-.
+@media screen and (max-width: 1720px) {
+    .about2, .about3 {
+        width: 94% !important;
+        text-align: center;
+    }    
+}

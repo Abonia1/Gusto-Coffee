@@ -41,16 +41,16 @@
     <div class="item active">
       <img id="carouselImg" src="IMAGES/gusto_house.png" alt="Gusto House">
       <div class="carousel-caption">
-        <h3>Gusto House</h3>
-        <p>Welcome and have a visit!</p>
+        <h3>Gusto Coffee</h3>
+        <p>Bienvenue !</p>
       </div>
     </div>
 
     <div class="item">
       <img id="carouselImg" src="IMAGES/gusto_house2.png" alt="Gusto House">
       <div class="carousel-caption">
-        <h3>Our new Espace</h3>
-        <p>Want to feel heaven in coffee time?</p>
+        <h3>Notre nouvelle Espace</h3>
+        <p>Detendez vous avec un bon café</p>
       </div>
     </div>
 
@@ -58,7 +58,7 @@
       <img id="carouselImg" src="IMAGES/gusto_house.png" alt="Gusto House">
       <div class="carousel-caption">
 <!--  <h3>Special Offers</h3> -->
-        <input type="button" value="Get Our special Offers" onclick="location.href = 'SPECIALS.php';"/>
+        <input type="button" value="Découvrez nos services" onclick="location.href = 'menu1.php';" class="buttonslider"/>
       </div>
     </div>
   </div>
@@ -66,11 +66,11 @@
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
+    <span class="sr-only">Précédent</span>
   </a>
   <a class="right carousel-control" href="#myCarousel" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
+    <span class="sr-only">Suivant</span>
   </a>
 </div>
 
@@ -79,13 +79,13 @@
 			    <div class="snap"><center><img src="IMAGES/photo.png"  height="350px" width="1000px" border="3px" style="margin-top:20px;"></center>
 				</div>
 				<div class="line" >
-					<center>The right place to have good rest !</center>
+					<center>La meilleur place pour ce detendre et travailler</center>
 					
 					</div>
 					
 					<div class="a" style="font-size:29px">
-	<div class="a1"><img src="IMAGES/C4.PNG" class="img1"><p>The feeling of satisfaction and<br/> the desire to come back again<br/> won�t leave you!</p></div>
-				<div class="a2"><img src="IMAGES/c5.PNG" class="img1"><p>Only here you will meet the<br/> combination of exquisite cuisine, <br/>pleasant interior and great service!</p></div>
+	<div class="a1"><img src="IMAGES/C4.PNG" class="img1"><p>Venez découvrir, vous ne voudrez plus jamais allez ailleurs !</p></div>
+				<div class="a2"><img src="IMAGES/c5.PNG" class="img1"><p>Les meilleurs services que le co-working n'est jamais connu</p></div>
 				</div>
 				
 		          
@@ -132,27 +132,32 @@
 				  
 					<div class="offer1">
 					
-					<div class="offer2"><h1><center><a style="text-decoration:none;color:#000000;" href="menu1.php">Food</a></center></h1></div>
+					<div class="offer2"><h1><center><a style="text-decoration:none;color:#000000;" href="menu1.php">Nourritures</a></center></h1></div>
 					<div class="offer3"><img src="IMAGES/c24.PNG" height="273" width="300"></div>
 					</div>
 					
 					<div class="offer1">
-					<div class="offer2"><h1><center><a style="text-decoration:none;color:#000000;" href="beverages.php">Beverages</a></center></h1></div>
+					<div class="offer2"><h1><center><a style="text-decoration:none;color:#000000;" href="beverages.php">Boissons</a></center></h1></div>
 					<div class="offer3"><img src="IMAGES/c25.PNG" height="276" width="300"></div>
 					</div>
 					
 					
 					
 					<div class="offer1">
-					<div class="offer2"><h1><center><a  style="text-decoration:none;color:#000000;" href="combo offers.php">Combo deals</a></center></h1></div>
+					<div class="offer2"><h1><center><a  style="text-decoration:none;color:#000000;" href="combo offers.php">Menus</a></center></h1></div>
 					<div class="offer3"><img src="IMAGES/c27.PNG" height="276" width="300"></div>
 					</div>
-					</div>-->	
+					
+					<div class="offer1">
+					<div class="offer2"><h1><center><a  style="text-decoration:none;color:#000000;" href="combo offers.php">Services</a></center></h1></div>
+					<div class="offer3"><img src="IMAGES/c27.PNG" height="276" width="300"></div>
+					</div>
+					</div>	
 					<?php
 				        include ('footer.php');
 				    ?>
 					
-					</div>
+					
 					
 					</body>
 					

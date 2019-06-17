@@ -1,80 +1,84 @@
 .contact {
-    width: 1250px;
-    height: 750px;
-    background-color: #D1C6B2;
-    border: none;
-    margin-top: 30px;
-    margin-left: 50px;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 9px solid #2B8838;
+    background-color: #3BB44A;
+    height:750px;
+    margin-top:30px;
 }
-
-.contact2 {
-    width: 550px;
-    height: 500px;
-    border: none;
-    float: right;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    font-family: Vladimir Script;
-    font-size: 38px;
-}
-
-.a {
-    width: 190px;
-    height: 40px;
-    font-size: 20px;
-    margin-left: 30px;
-    margin-top: -40px;
-    font-family: Vladimir Script;
-    background-color: #E4D8C2;
-}
-
-.b {
-    margin-top: 20px;
-    font-size: 20px;
-    margin-left: 30px;
-    width: 190px;
-    height: 40px;
-    font-family: Vladimir Script;
-    font-size: 20px;
-    background-color: #E4D8C2;
-}
-
-.c {
-    margin-top: 20px;
-    font-size: 20px;
-    margin-left: 30px;
-    width: 280px;
-    height: 100px;
-    font-family: Vladimir Script;
-    font-size: 20px;
-    background-color: #E4D8C2;
-}
-
-.d {
-    margin-top: 30px;
-    font-size: 20px;
-    margin-left: 30px;
-    width: 200px;
-    height: 45px;
-    font-family: Vladimir Script;
-    font-size: 25px;
-    background-color: #E4D8C2;
-}
-
 .contact1 {
-    width: 600px;
-    height: 500px;
-    background-color: none;
-    border: none;
-    float: left;
+    width: 44%;
+    float:left;
+    padding: 20px;
+    background-color:none;
+    border:none;
+    float:left;
 }
+.contact2 {
+    width: 34%;
+    display: inline-block;
+    padding: 20px;
+    border:none;
+    float:right;
+    margin-bottom:20px;
+    margin-right:20px; 
+    font-size:38px;
+}
+.a
+{width:190px;
+height:40px;
+font-size:20px;
+margin-left:30px;
+margin-top:-40px; 
+background-color:#E4D8C2;}
+.b
+{
+margin-top:20px;
+font-size:20px;
+margin-left:30px;
+width:190px;
+height:40px; 
+font-size:20px;
+background-color:#E4D8C2;
+}
+.c
+{
+margin-top:20px;
+font-size:20px;
+margin-left:30px;
+width:280px;
+height:100px; 
+font-size:20px;
+background-color:#E4D8C2;
+}
+.d
+{
+margin-top:30px;
+font-size:20px;
+margin-left:30px;
+width:200px;
+height:45px;
+font-size:25px;
+background-color:#E4D8C2;
+}
+.bottom
+{
+height:70px;
+background-color:#D1C6B2;
+border:none;
 
-.bottom {
-    height: 70px;
-    background-color: #D1C6B2;
-    border: none;
-    width: 1354px;
-    margin-top: 28px;
-    margin-left: -10px;
-    font-weight: bold;
+width:1354px;
+margin-top:28px;
+margin-left:-10px;
+font-weight:bold;
+}
+@media screen and (max-width: 1080px) {
+    .contact1, .contact2 {
+        width: 100% !important;
+        float: none;
+    }
+    .contact {
+        height: 1300px;
+    }
 }

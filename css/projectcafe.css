@@ -1,6 +1,5 @@
 .line
 {
-font-family:Vladimir Script; 
 font-size:45px;
 font-weight:bold;
 }
@@ -16,11 +15,13 @@ margin-bottom:20px;
 }
 .a
 {
-margin-left:170px;
+margin-left:10%;
 margin-top:30px;
-font-family:Vladimir Script; 
 width:80%;
 height:250px;
+}
+.a p {
+    font-size: 24px;
 }
 .a1
 {
@@ -29,6 +30,8 @@ height:200px;
 width:50%;
 margin-top:50px;
 opacity:;
+padding-left: 5%;
+padding-right: 5%;
 
 }
 .a2
@@ -36,7 +39,9 @@ opacity:;
 	height:200px;
 	width:50%;
 	float:right;
-	margin-top:50px;	
+	margin-top:50px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .img1
@@ -46,11 +51,9 @@ float:left;
 
 .offer
 {
-margin-left:165px;
-font-family:Vladimir Script;
-
+margin-left:15%;
 height:400px;
-width:1000px;
+text-align: center;
 margin-top:40px;
 
 }
@@ -104,3 +107,28 @@ width:1354px;
 margin-top:28px;
 margin-left:-10px;
 font-weight:bold;
+}
+.buttonslider {
+    margin-right: 42%;   
+}
+@media screen and (max-width: 1200px) {
+    .offer {
+        height:800px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .a1, .a2 {
+        width: 100%;
+    }
+    .offer {
+        height:1000px;
+    }
+    .offer1 {
+        margin-bottom: 2px;
+    }
+}
+@media screen and (max-width: 843px) {
+    .offer {
+        height:1800px;
+    }
+}

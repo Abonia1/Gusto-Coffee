@@ -3,11 +3,7 @@
 								<title></title>
 								<link rel="stylesheet" type="text/css" href="css/menu.css"/>
 								<link rel="stylesheet" type="text/css" href="css/menu1.css"/>
-								<link rel="stylesheet" type="text/css" href="css/big eats.css"/>
-								<link rel="stylesheet" type="text/css" href="css/sundaes.css"/>
-								<link rel="stylesheet" type="text/css" href="css/cake away.css"/>
-								<link rel="stylesheet" type="text/css" href="css/dessert.css"/>
-								<link rel="stylesheet" type="text/css" href="css/small eats.css"/>
+								<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 								
 				</head>
 				
@@ -17,15 +13,14 @@
 				?>
 				
 <div class="maindiv">
-	<div class="leftdivv">
+	<div class="leftdiv">
 				
-				<center><a style="text-decoration:none;color:#000000;" href="small eats.php"><p  class="leftdiv1">Small eats</p></a></center>
-				<center><a style="text-decoration:none;color:#000000;" href="big eats.php"><p  class="leftdiv1">Big eats/Sandwiches</p></a></center>
-				<center><a  style="text-decoration:none;color:#000000;"href="sundaes.php"><p  class="leftdiv1">Sundaes</p></a></center>
-				<center><a  style="text-decoration:none;color:#000000;"href="cake away.php" ><p  class="leftdiv1">Cake away</p></a></center>
-				<center><a  style="text-decoration:none;color:#000000;"href="dessert.php"><p  class="leftdiv1">Dessert shots</p></a></center>				
+				<a style="text-decoration:none;color:#000000;" href="menu1.php"><p class="leftdiv1">Nourritures</p></a>
+				<a style="text-decoration:none;color:#000000;" href="beverages.php"><p class="leftdiv1">Boissons</p></a>
+				<a style="text-decoration:none;color:#000000;"href="combo offers.php"><p class="leftdiv1">Menus</p></a>	
+				<a style="text-decoration:none;color:#000000;"href="combo offers.php"><p class="leftdiv1">Services</p></a>	
     </div>
-	<div class="rightdivv">
+	<div class="rightdiv">
 				<div class="rightdiv1">
 					<div class="rightdiv1a"><img src="IMAGES/c14.PNG" style="height:279px; width:279px; "></div>
 					<div class="rightdiv1b"><center><p>EGG WRAP(&nbsp;<img src="IMAGES/download.png" style="height:11px; width:13px;">50)</p></center></div>
