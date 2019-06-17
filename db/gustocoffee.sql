@@ -185,3 +185,17 @@ INSERT INTO `user` (`id`, `name`, `user`, `pwd`) VALUES
 (7, 'man', 'man@gmail.com', '555'),
 (8, 'neha', 'asda', 'adc');
 
+--
+-- create table  `reservation`
+--
+
+create table if not EXISTS 'reservation'(
+  'reservation_id' int(8) NOT NULL AUTO_INCREMENT,
+   'date' date NOT NULL DEFAULT '',
+   'time' time NOT NULL DEFAULT '',
+   'seat_id' int(8) not NULL DEFAULT '';
+)
+-- Test Insert with seat_availability='True'
+
+INSERT into 'reservation' ('reservation_id','date','time','seat_id') VALUES
+(1,'')
