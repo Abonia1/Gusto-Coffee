@@ -5,23 +5,27 @@ body {
     font-family: 'Roboto', sans-serif !important;
     font-size: 1rem;
 }
+
 #carouselImg {
     width: 55%;
     margin-left: auto;
     margin-right: auto;
 }
+
 input[type=button] {
-       
     float: right;
-    background : #2eb2ff;
+    background: #2eb2ff;
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 1rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    text-align:center;
+    text-align: center;
 }
+
+
 /* HEADER */
+
 .menu {
     margin-top: 70px;
     margin-bottom: 70px;
@@ -32,28 +36,33 @@ input[type=button] {
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
 }
+
 .accueil .menu ul {
     width: 410px;
     height: 80px;
     padding: 0px 20px;
-    float:left;
+    float: left;
     margin: 0px;
 }
+
 .menu ul {
     width: 370px;
     height: 80px;
     padding: 0px 20px;
-    float:left;
+    float: left;
     margin: 0px;
 }
+
 .accueil .menu ul li {
     height: 100%;
     padding: 18px;
 }
+
 .menu ul li {
     height: 44px;
     padding: 0px 18px;
 }
+
 .menu ol {
     background-color: #3BB44A !important;
     border: 1px solid black;
@@ -61,39 +70,49 @@ input[type=button] {
     margin-left: -50px !important;
     z-index: 2;
 }
+
 .menu .logo {
     width: 200px;
     height: 200px !important;
-    float:left;
+    float: left;
 }
+
 .menu .logo img {
     width: 200px !important;
     height: 200px !important;
     margin-top: -40px !important;
 }
 
+
 /* CONTENU */
+
 .accueil .snap {
     margin-left: 0px !important;
 }
+
 .offer1 {
     background-color: #2B8838 !important;
 }
+
 .offer2 {
     background-color: #2B8838 !important;
     border: 5px solid #3BB44A !important;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+
 .offer2 h1 {
     margin-top: 25px;
 }
+
 .offer3 {
     background-color: #3BB44A !important;
 }
+
 .offer3:hover {
     border: 7px solid #3BB44A !important;
 }
+
 .about1 {
     width: 94%;
     margin-left: 3%;
@@ -101,16 +120,19 @@ input[type=button] {
     border: 9px solid #2B8838 !important;
     background-color: #3BB44A !important;
 }
+
 .about2 {
     width: 45%;
-    float:left;
+    float: left;
     padding: 20px;
 }
+
 .about3 {
     width: 50%;
     display: inline-block;
     padding: 20px;
 }
+
 .contact {
     width: 94%;
     margin-left: 3%;
@@ -118,16 +140,18 @@ input[type=button] {
     border: 9px solid #2B8838 !important;
     background-color: #3BB44A !important;
 }
+
 .contact1 {
     width: 44%;
-    float:left;
+    float: left;
     padding: 20px;
 }
+
 .contact2 {
-    width: 50%;
     display: inline-block;
     padding: 20px;
 }
+
 .specails {
     width: 94%;
     margin-left: 3%;
@@ -135,13 +159,16 @@ input[type=button] {
     border: 9px solid #2B8838 !important;
     background-color: #3BB44A !important;
 }
+
 .div1a {
     border: 7px solid #2B8838 !important;
 }
+
 .div1b {
     background-color: #3BB44A !important;
     border: 7px solid #2B8838 !important;
 }
+
 .maindiv {
     width: 94% !important;
     margin-left: 3% !important;
@@ -150,18 +177,26 @@ input[type=button] {
     background-color: #3BB44A !important;
     display: inline-block;
 }
+
 .leftdivv {
     width: 25%;
     float: left;
 }
+
 .rightdivv {
     width: 70%;
     float: left;
 }
-.rightdiv1a, .rightdiv1b, .rightdiv2a, .rightdiv2b {
-    border: 5px solid #2B8838 !important; 
+
+.rightdiv1a,
+.rightdiv1b,
+.rightdiv2a,
+.rightdiv2b {
+    border: 5px solid #2B8838 !important;
     background-color: #3BB44A !important;
 }
+
+
 /* FOOTER */
 
 .bottom {
@@ -174,17 +209,20 @@ input[type=button] {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
+
 .bottom p {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 10px;
 }
+
 .bottom a {
     color: white;
     font-weight: bold;
     text-decoration: none;
     background-color: transparent;
 }
+
 .pull-right {
     float: right !important;
 }
