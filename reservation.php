@@ -16,7 +16,9 @@
     <script src="js/timepicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.8.1/jquery.timepicker.min.css"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.8.1/jquery.timepicker.min.js"></script>
-
+    <?php
+    include_once 'dbConfig.php';
+    ?>
 
     <!-- <link rel="stylesheet" type="text/css" href="jquery.datetimepicker.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -72,11 +74,6 @@
             return false;
         }
 
-        if (what.selectedIndex < 1) {
-            alert("Please enter your seat.");
-            what.focus();
-            return false;
-        }
 
         return true;
     }
@@ -85,13 +82,13 @@
     <script>
     $(function() {
         $("#datepicker").datepicker({
-            dateFormat: "dd-m-yy",
+            dateFormat: "dd-mm-yy",
             yearRange: "-100:+20",
             minDate: '0'
         });
     });
     $(document).ready(function() {
-        $('.timepick').timepicker({
+        $('#timepicker').timepicker({
             timeFormat: 'H:i',
             dropdown: true,
             scrollbar: true,
@@ -183,7 +180,7 @@
     //to call show() function to display the plan image
     function show() {
         //document.getElementById('planImg').style.maxHeight = "200px";
-        document.getElementById('planImg').src = "IMAGES/plan2.PNG";
+        document.getElementById('planImg').background = "IMAGES/plan2.PNG";
     }
     </script>
     <!-- <script>
@@ -219,12 +216,12 @@ inline:true,
         <table style="border-spacing: 40px;">
             <tr>
                 <td><label>Date</label>
-                    <input type="text" id="datepicker" required="true" />
+                    <input type="text" name='Date' id="datepicker" required="true" />
                 </td>
 
                 <td>
                     <label>Time</label>
-                    <input class="timepick" style="position:relative" />
+                    <input type="text" class="time" name='Time' id="timepicker" style="position:relative" />
                 </td>
                 <td style="padding-top:20px;">
                     <label>People</label>
@@ -239,9 +236,9 @@ inline:true,
 
             </tr>
         </table>
-        
-        <div id="Plan" style="width:80%">
-            <div style="width:40%;float:left">
+
+        <div id="Plan" style="width:100%;">
+            <div style="width:50%;float:left;margin:280 auto">
                 <?php
 $con=mysqli_connect("localhost","root","","gustocoffee");
 //mysqli_select_db("gustocoffee");
@@ -256,35 +253,41 @@ while($y=mysqli_fetch_array($x) )
 }
 ?>
             </div>
-            <div style="width:40%;float:right">
-                <img id="planImg" src="IMAGES/plan2.PNG" />
+            <div style="width:50%;float:right">
+                <img class="image" id="planImg" src="IMAGES/plan2.PNG">
             </div>
         </div>
-        <form name="RegForm" action="reserveForm.php" onsubmit="return GEEKFORGEEKS()" method="post">
+    </div>
 
+    <?php
+   
+
+    if(isset($_POST['Submit'])){
+        $sql = "INSERT INTO reservation (date,time,quantity,name,email,telephone,adress,comment,seat_id)
+        VALUES ('".$_POST["Date"]."','".$_POST["Time"]."','".$_POST["quantity"]."','".$_POST["Name"]."','".$_POST["EMail"]."','".$_POST["Telephone"]."','".$_POST["Address"]."','".$_POST["Comment"]."','".$_POST["1"]."')";
+        $result = mysqli_query($conn,$sql);    
+}
+
+    ?>
+    <div class='container'>
+        <form name="RegForm" action="reserveForm.php" onsubmit="return GEEKFORGEEKS()" method="post">
+            <p>Date: <br><input type="text" size=65 name="DateForm"> </p><br>
+            <p>Time: <br><input type="text" size=65 name="Time"> </p><br>
+            <p>People: <br><input type="text" size=65 name="quantity"> </p><br>
             <p>Name: <br><input type="text" size=65 name="Name"> </p><br>
             <p> Address: <br><input type="text" size=65 name="Address"> </p><br>
             <p>E-mail Address:<br> <input type="text" size=65 name="EMail"> </p><br>
-            <p>Password: <br><input type="text" size=65 name="Password"> </p><br>
             <p>Telephone: <br><input type="text" size=65 name="Telephone"> </p><br>
-
-            <p>SELECT YOUR SEAT
-                <br><select type="text" value="" name="Subject">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select></p><br><br>
             <p>Comments:<br> <textarea cols="55" name="Comment">  </textarea></p>
             <p><input class='SubmitButton' type="submit" value="Reserve" name="Submit">
                 <input class='SubmitButton' type="reset" value="Reset" name="Reset">
             </p>
 
         </form>
+    </div>
 
 
-  
+
     </div>
     <?php
     include('footer.php');
