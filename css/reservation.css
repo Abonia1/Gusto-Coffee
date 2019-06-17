@@ -1,75 +1,68 @@
-    .ui-timepicker-wrapper {
-        position: relative;
+table {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width:960px) {
+    #planImg {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
     }
-    
-    .élément {
-        position: relative;
+}
+@media screen and (max-width:960px) {
+    #planImg {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
-    
-    .qty {
-        width: 40px;
-        height: 25px;
-        text-align: center;
-    }
-    
-    input.qtyplus {
-        width: 25px;
-        height: 25px;
-    }
-    
-    input.qtyminus {
-        width: 25px;
-        height: 25px;
-    }
-    
-    .button {
-        background-color: skyblue;
-        font-size: 18px;
-        font-weight: bold;
-    }
-    
-    #numberImg {
-        width: 50px;
-        height: 50px;
-        border: 5px solid white;
-    }
-    
-    .selected {
-        border: 2px solid #0F0;
-        box-shadow: 0px 0px 3px 2px #0F0;
-        transition: border 0.2s, box-shadow 0.2s;
-    }
-    
-    .unselected {
-        border: 2px solid #FFF;
-        box-shadow: 0px 0px 0px 0px #0F0;
-        transition: border 0.2s, box-shadow 0.2s;
-    }
-    
-    GEEKFORGEEKS {
-        margin-left: 70px;
-        font-weight: bold;
-        float: left;
-        clear: left;
-        width: 100px;
-        text-align: left;
-        margin-right: 10px;
-        font-family: sans-serif, bold, Arial, Helvetica;
-        font-size: 14px;
-    }
-    
-    form {
-        margin: 0 auto;
-        width: 600px;
-    }
-    
-    .SubmitButton {
-        margin-top: 30px;
-        font-size: 20px;
-        margin-left: 30px;
-        width: 200px;
-        height: 45px;
-        font-family: Vladimir Script;
-        font-size: 25px;
-        background-color: #E4D8C2;
-    }
+}
+.ui-timepicker-wrapper {
+    position: relative;
+}
+
+.élément {
+    position: relative;
+}
+
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+
+input.qtyplus {
+    width: 25px;
+    height: 25px;
+}
+
+input.qtyminus {
+    width: 25px;
+    height: 25px;
+}
+
+.button {
+    background-color: skyblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+.map {
+    text-align: center;
+}
+.map__image {
+    width: 571px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.map__image g {
+    fill: white;
+    stroke: #000;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+.map__image g:hover {
+    fill: #3bb44a;
+    stroke: #000;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
