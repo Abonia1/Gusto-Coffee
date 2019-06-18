@@ -22,7 +22,22 @@ include_once 'dbConfig.php';
         <!-- <link rel="stylesheet" type="text/css" href="jquery.datetimepicker.css"/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="jquery.datetimepicker.js"></script> -->
+        
+       
         <script>
+            //auto generate date and time value
+            function myChangeFunction(input1) {
+            var input2 = document.getElementById('DateForm');
+            input2.value = input1.value;
+            }
+
+            function myChangeFunction1(input3) {
+            var input4 = document.getElementById('TimeForm');
+            input4.value = input3.value;
+            }
+        
+           
+            //Form validation
             function GEEKFORGEEKS() {
                 var name = document.forms["RegForm"]["Name"];
                 var email = document.forms["RegForm"]["EMail"];
@@ -192,11 +207,11 @@ include('menu.php');
                 <tr>
                     <td>
                         <label>Date</label>
-                        <input type="text" name='Date' id="datepicker" required="true" />
+                        <input type="text" name='Date' onchange="myChangeFunction(this)" id="datepicker" required="true" />
                     </td>
                     <td>
                         <label>Time</label>
-                        <input type="text" class="time ui-timepicker-input" name='Time' id="timepicker"
+                        <input type="text" class="time ui-timepicker-input" name='Time' onchange="myChangeFunction1(this)" id="timepicker"
                         style="position:relative" />
                     </td>
                     <td style="padding-top:20px;">
@@ -237,13 +252,13 @@ while($y=mysqli_fetch_array($x) )
                 <p>
                     Date: 
                     <br>
-                    <input type="text" size=65 name="DateForm">
+                    <input type="text" size=65 name="DateForm" id="DateForm"/>
                 </p>
                 <br>
                 <p>
                     Time: 
                     <br>
-                    <input type="text" size=65 name="TimeForm">
+                    <input type="text" size=65 name="TimeForm" id="TimeForm"/>
                 </p>
                 <br>
                 <p>
