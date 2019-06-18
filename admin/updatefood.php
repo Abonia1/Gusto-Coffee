@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","aboabo","gustocoffee");
+$con=mysqli_connect("localhost","root","","gustocoffee");
 //mysqli_select_db("gustocoffee");
 
 $a=$_POST['a'];

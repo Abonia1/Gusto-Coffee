@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","aboabo","gustocoffee");
+$con=mysqli_connect("localhost","root","","gustocoffee");
 //mysqli_select_db("gustocoffee");
 $a=$_POST['menutype'];
 $b=$_POST['product'];
@@ -10,7 +10,10 @@ $f=$_POST['price'];
 
 move_uploaded_file($d,$e);
 
-mysqli_query($con,"INSERT INTO `combo` (`c_id` ,`menu_type` ,`product` ,`image`,`price`)VALUES ('',  '$a',  '$b',  '$g','$f')");
+//mysqli_query($con,"INSERT INTO `combo` (`c_id` ,`menu_type` ,`product` ,`image`,`price`)VALUES ('',  '$a',  '$b',  '$g','$f')");
+$stmt = mysqli_prepare($con, "INSERT INTO  `combo` (`menu_type` ,`product` ,`image`,`price`) VALUES (?, ?, ?, ?)");
+mysqli_stmt_bind_param($stmt, 'sssi', $a, $b, $g, $f);
+mysqli_stmt_execute($stmt);
 
 ?>
 

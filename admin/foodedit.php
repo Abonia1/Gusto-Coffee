@@ -12,7 +12,7 @@
 <div class="maindiv" >
 
 <?php
-$con=mysqli_connect("localhost","root","aboabo","gustocoffee");
+$con=mysqli_connect("localhost","root","","gustocoffee");
 //mysqli_select_db("gustocoffee");
 $a=$_GET['preeti']; 
 $x=mysqli_query($con,"SELECT * FROM `food` WHERE `f_id`='$a'");
