@@ -46,9 +46,13 @@ function GEEKFORGEEKS() {
         phone.focus();
         return false;
     }
+
+
+
     return true;
 }
 
+//date and time picker
 $(function() {
     $("#datepicker").datepicker({
         dateFormat: "dd-mm-yy",
@@ -74,29 +78,8 @@ $(document).ready(function() {
     //     }
     // });
 });
-//Border change on clicking image
-$(document).ready(function() {
-    // wait until all images are loaded
-    $(window).on("load", function() {
-        $('img').click(function() {
-            if ($(this).hasClass("selected")) {
-                $(this).removeClass('selected').addClass('unselected');
-            } else {
-                $(this).removeClass('unselected').addClass('selected');
-            }
-        });
-    });
-});
-//     //toogle class
-//     $('#numberImg').click(function() {
-//    if( $(this).hasClass('selected') ) {
-//         $(this).toggleClass(' unselected selected');
-//     }
-//     else{
-//          $(this).addClass('selected');
-//     }
-// });
-//try 1
+
+//Incrementer and decrementer 
 jQuery(document).ready(function() {
     // This button will increment the value
     $('.qtyplus').click(function(e) {
@@ -133,8 +116,53 @@ jQuery(document).ready(function() {
         }
     });
 });
+
+
 //to call show() function to display the plan image
 function show() {
+    var quantity = document.getElementById('quantity').value;
+    if ($("#datepicker").val().length == 0 || $("#timepicker").val().length == 0 || quantity == 0) {
+        if ($("#datepicker").val().length == 0) {
+            window.alert("Please select date before checking seat availability.");
+        }
+        if ($("#timepicker").val().length == 0) {
+            window.alert("Please select time before checking seat availability.");
+        }
+        if (quantity == 0) {
+            window.alert("Please select number of seat before checking seat availability.");
+        }
+        document.getElementById('Plan').style.display = "none";
+        document.getElementById('regform').style.display = "none";
+    } else {
+        document.getElementById('Plan').style.display = "block";
+        document.getElementById('regform').style.display = "block";
+    }
     //document.getElementById('planImg').style.maxHeight = "200px";
-    document.getElementById('planImg').background = "IMAGES/plan2.PNG";
+    //document.getElementById('planImg').background = "IMAGES/plan2.PNG";
+
 }
+
+
+
+//Border change on clicking image
+$(document).ready(function() {
+    // wait until all images are loaded
+    $(window).on("load", function() {
+        $('img').click(function() {
+            if ($(this).hasClass("selected")) {
+                $(this).removeClass('selected').addClass('unselected');
+            } else {
+                $(this).removeClass('unselected').addClass('selected');
+            }
+        });
+    });
+});
+
+//Compare the class of selected and unselected of the image to upadte the database
+$(document).ready(function() {
+    (function updateAvalilability() {
+        if ($(this).hasClass("selected")) {
+            alert("LOL");
+        }
+    });
+});

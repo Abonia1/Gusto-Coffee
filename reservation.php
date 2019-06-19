@@ -20,13 +20,12 @@
         <?php
 include_once 'dbConfig.php';
         ?>
-
     </head>
     <body>
         <?php
 include('menu.php');
         ?>
-        <div class="container">
+        <div class="container" style="width:100%;height:50%">
             <table style="border-spacing: 40px;">
                 <tr>
                     <td>
@@ -35,23 +34,23 @@ include('menu.php');
                     </td>
                     <td>
                         <label>Time</label>
-                        <input type="text" class="time ui-timepicker-input" name='Time' onchange="myChangeFunction1(this)" id="timepicker"
-                        style="position:relative" />
+                        <input type="text" class="time ui-timepicker-input" name='Time' onchange="myChangeFunction1(this)"
+                        id="timepicker" style="position:relative" />
                     </td>
                     <td style="padding-top:20px;">
                         <label>People</label>
                         <input type='button' value='-' class='qtyminus' field='quantity' />
-                        <input type='text' name='quantity' value='0' class='qty' />
+                        <input type='text' name='quantity' value='0' id="quantity" class='qty' />
                         <input type='button' value='+' class='qtyplus' field='quantity' />
                     </td>
                     <td>
                     </td>
                     <td>
-                        <button class="button" onclick="show()">Check Availability</button>
+                        <button class="button"  onclick="show()">Check Availability</button>
                     </td>
                 </tr>
             </table>
-            <div id="Plan" style="width:100%;">
+            <div id="Plan" style="width:100%;display:none;">
                 <div style="width:50%;float:left;margin:280 auto">
                     <?php
 $con=mysqli_connect("localhost","root","","gustocoffee");
@@ -60,7 +59,8 @@ $x=mysqli_query($con,"SELECT seat_image FROM `seat` WHERE `seat_availability`=0"
 while($y=mysqli_fetch_array($x) )
 {
                     ?>
-                    <img id="numberImg" class='unselected' src="<?php echo $y[0]; ?>">
+                    <img id="numberImg" class='unselected' src="
+<?php echo $y[0]; ?>">
                     <?php
 }
                     ?>
@@ -71,33 +71,33 @@ while($y=mysqli_fetch_array($x) )
             </div>
         </div>
         <div class='container'>
-            <form name="RegForm" action="reserveForm.php" onsubmit="return GEEKFORGEEKS()" method="post">
+            <form name="RegForm" id="regform"  action="reserveForm.php" onsubmit="return GEEKFORGEEKS()" method="post">
                 <p>
-                    Date: 
+                    Date:
                     <br>
-                    <input type="text" size=65 name="DateForm" id="DateForm"/>
+                    <input type="text" size=65 name="DateForm" id="DateForm" />
                 </p>
                 <br>
                 <p>
-                    Time: 
+                    Time:
                     <br>
-                    <input type="text" size=65 name="TimeForm" id="TimeForm"/>
+                    <input type="text" size=65 name="TimeForm" id="TimeForm" />
                 </p>
                 <br>
                 <p>
-                    People: 
+                    People:
                     <br>
                     <input type="text" size=65 name="quantity">
                 </p>
                 <br>
                 <p>
-                    Name: 
+                    Name:
                     <br>
                     <input type="text" size=65 name="Name">
                 </p>
                 <br>
                 <p>
-                    Address: 
+                    Address:
                     <br>
                     <input type="text" size=65 name="Address">
                 </p>
@@ -109,7 +109,7 @@ while($y=mysqli_fetch_array($x) )
                 </p>
                 <br>
                 <p>
-                    Telephone: 
+                    Telephone:
                     <br>
                     <input type="text" size=65 name="Telephone">
                 </p>
