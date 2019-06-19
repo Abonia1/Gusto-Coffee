@@ -59,7 +59,7 @@ $x=mysqli_query($con,"SELECT seat_image FROM `seat` WHERE `seat_availability`=0"
 while($y=mysqli_fetch_array($x) )
 {
                     ?>
-                    <img id="numberImg" class='unselected' src="
+                    <img id="numberImg" onchange="myChangeFunction3(src)" class='unselected' src="
 <?php echo $y[0]; ?>">
                     <?php
 }
@@ -82,6 +82,9 @@ while($y=mysqli_fetch_array($x) )
                     Time:
                     <br>
                     <input type="text" size=65 name="TimeForm" id="TimeForm" />
+                </p>
+                <p>
+                <input type="text" size=65 name="ImgSrc" id="ImgSrc" style="display:none"/>
                 </p>
                 <br>
                 <p>

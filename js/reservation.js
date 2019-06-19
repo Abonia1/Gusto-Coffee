@@ -166,3 +166,29 @@ $(document).ready(function() {
         }
     });
 });
+
+//get full url while click on image
+// document.addEventListener('DOMContentLoaded', function() {
+//     document.addEventListener('click', function(event) {
+//         if (event.target.tagName.toUpperCase() == 'IMG') {
+
+//             document.getElementById('ImgSrc').value = event.target.src;
+//             console.log(document.getElementById('ImgSrc').value);
+//         }
+//     });
+// });
+
+//trim url
+document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('click', function(event) {
+        if (event.target.tagName.toUpperCase() == 'IMG') {
+            var trimPath = RemoveFirstDirectoryPartOf(event.target.src);
+            document.getElementById('ImgSrc').value = trimPath;
+            console.log(document.getElementById('ImgSrc').value);
+        }
+    });
+});
+
+function RemoveFirstDirectoryPartOf(srcPath) {
+    return srcPath.replace("http://localhost:8080/gustocoffee/", '');
+}

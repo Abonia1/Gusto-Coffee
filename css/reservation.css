@@ -74,3 +74,10 @@ form {
     font-size: 25px;
     background-color: #E4D8C2;
 }
+
+#ThankyouForm {
+    width: 50%;
+    margin: 0 auto;
+    font-family: Vladimir Script;
+    font-size: 38px;
+}
